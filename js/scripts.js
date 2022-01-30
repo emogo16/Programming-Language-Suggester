@@ -31,7 +31,6 @@ $(document).ready(function() {
     const answerContainer = answerContainers[questionNumber];
     const selector = `input[name=question${questionNumber}]:checked`;
     const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-    // const result = 
     if(userAnswer === currentQuestion.correctAnswer){
       numCorrect++;
       answerContainers[questionNumber].style.color = 'lightgreen';
@@ -39,6 +38,21 @@ $(document).ready(function() {
     else{
       answerContainers[questionNumber].style.color = 'red';
     }
+    // const score;
+    if(userAnswer === currentQuestion.correctAnswer){
+        numCorrect++;
+      if (userAnswer === 0) {
+        answerContainers = Python;
+      }
+        
+      if (userAnswer> 0 && yourLanguage < 5) {
+        answerContainers = Java;
+      }
+        
+      if (userAnswer === 5) {
+        answerContainers = Ruby
+      }
+
   });
     // function showResults(){
     //   const answerContainers = quizContainer.querySelectorAll('.answers');
@@ -63,7 +77,7 @@ $(document).ready(function() {
   //   if (userAnswer === 5) {
   //     Ruby
   //         }
-  });
+
   resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
 }
 
