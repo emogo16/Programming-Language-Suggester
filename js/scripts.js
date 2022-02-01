@@ -5,7 +5,7 @@ $(document).ready(function() {
     const questionNum3 = $(document.quizp.questionNum3).val();
     const questionNum4 = $(document.quizp.questionNum4).val();
     const questionNum5 = $(document.quizp.questionNum5).val();
-    const yourLanguage = 0
+    // const yourLanguage = 0
 
     
     if (questionNum1 === "Elephant") {
@@ -24,13 +24,13 @@ $(document).ready(function() {
       yourLanguage++;
     }
     
-    var result;
+    const result;
 
     if (yourLanguage === 0) {
       result = Python;
     }
 
-    if (yourLanguage > 0 && yourLanguage< 5) {
+    if (yourLanguage > 0 && yourLanguage < 5) {
       result = Java;
     }
 
@@ -38,7 +38,10 @@ $(document).ready(function() {
       result= Ruby
     }
     
+    event.preventDefault();
+  });
 
-document.getElementById("submit").style.visibility = "visible";
-document.getElementById("yourLanguage").innerHTML = "The results indicate you are " + yourLanguage + "yourLanguage";
 });
+
+// document.getElementById("submit").style.visibility = "visible";
+// document.getElementById("yourLanguage").innerHTML = "The results indicate you are " + yourLanguage + "yourLanguage";
