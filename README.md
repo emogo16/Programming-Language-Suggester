@@ -25,11 +25,12 @@ Then clone this reposiroty to your device
 
 You can then open it in your local web browser
 
-You do not need to install any additinal software._
+You will want to open the index.html file in your browser
+
 
 ## Known Bugs
 
-There is alot of bugs mostly fixed them all. Can not get the functions to work properly. 
+There is no known bugs at the moment.
 
 ## License
 
