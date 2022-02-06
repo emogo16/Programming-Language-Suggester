@@ -7,52 +7,72 @@
   <title>Programming Language Suggester</title>
 </head>
 <body>
-
   <div class="container">
     <h1>What programming language are you based on your personality?</h1>
-    </div>
-
     <form id="pquiz" name ="pquiz">
-      <div class="category">
-        <p class = "questions">Choose an animal!</p>
-        <input type = "radio" id = "multi1" name = "questionNum1" value = "Elephant"> Elephant<br>
-        <input type = "radio" id = "multi1" name = "questionNum1" value = "Eagle"> Eagle<br>
-        <input type = "radio" id = "multi1" name = "questionNum1" value = "Lion"> Lion<br>
-        <input type = "radio" id = "multi1" name = "questionNum1" value = "Dog"> Dog<br>
+      <div class="questions1">
+        <h1>Choose an animal!</h1>
+        <input type="radio" id="Elephant" name="questionNum1" value="Elephant">
+        <label for="Elephant">Elephant</label><br>
+        <input type="radio" id="Eagle" name="questionNum1" value="Eagle">
+        <label for="Eagle">Eagle</label><br>
+        <input type="radio" id="Lion" name="questionNum1" value="Lion">
+        <label for="Lion">Lion</label><br>
+        <input type="radio" id="Dog" name="questionNum1" value="Dog">
+        <label for="Dog">Dog</label><br>
       </div>
-      <div class = "category".
-        <p class = "questions">Pick a food item</p>
-        <input type = "radio" id = "multi2" name = "questionNum2" value = "Sushi"> Sushi<br>
-        <input type = "radio" id = "multi2" name = "questionNum2" value = "Pasta"> Burgers<br>
-        <input type = "radio" id = "multi2" name = "questionNum2" value = "Burritos"> Burritos<br>
-        <input type = "radio" id = "multi2" name = "questionNum2" value = "Chicken"> Chicken<br>
-    </div>
-    <div class="questions">
-      <h1>Choose a sport</h1>
-        <input type = "radio" id = "multi3" name = "questionNum3" value = "Football"> Football<br>
-        <input type = "radio" id = "multi3" name = "questionNum3" value = "Soccer"> Soccer<br>
-        <input type = "radio" id = "multi3" name = "questionNum3" value = "Basketball"> Basketball<br>
-        <input type = "radio" id = "multi3" name = "questionNum3" value = "Tennis"> Tennis<br>
-    </div>
-  <p class = "questions">Choose a hobby</p>
-  <input type = "radio" id = "multi4" name = "questionNum4" value = "Gaming"> Gaming<br>
-  <input type = "radio" id = "multi4" name = "questionNum4" value = "Puzzles/Reading"> Puzzles/Reading<br>
-  <input type = "radio" id = "multi4" name = "questionNum4" value = "Gym"> Gym<br>
-  <input type = "radio" id = "multi4" name = "questionNum4" value = "Sleeping"> Sleeping<br>
-  
-  <p class = "questions">Favorite movie category</p>
-  <input type = "radio" id = "multi5" name = "questionNum5" value = "Horror"> Horror<br>
-  <input type = "radio" id = "multi5" name = "questionNum5" value = "Action"> Action<br>
-  <input type = "radio" id = "multi5" name = "questionNum5" value = "Romantic comedy"> Romantic comedy<br>
-  <input type = "radio" id = "multi5" name = "questionNum5" value = "Adventure"> Adventure<br>
-
-  <input id ="button" type="button" value="submit !" onclick= "submit();">
-
-</form>
-
-<div id = "Submit !">
-
-</div>
-</div>
+      <div class = "questions2">
+        <h1>Pick a food item</h1>
+        <input type="radio" id="Sushi" name="questionNum2" value="Sushi">
+        <label for="Sushi">Sushi</label><br>
+        <input type="radio" id="Burgers" name="questionNum2" value="Burgers">
+        <label for="Sushi">Burgers</label><br>
+        <input type="radio" id="Burritos" name="questionNum2" value="Burritos">
+        <label for="Sushi">Burritos</label><br>
+        <input type="radio" id="Chicken" name="questionNum2" value="Chicken">
+        <label for="Sushi">Chicken</label><br>
+      </div>
+      <div class="questions3">
+        <h1>Choose a sport</h1>
+        <input type="radio" id="Football" name="questionNum3" value="Football"> 
+        <label for="Football">Football</label><br>
+        <input type="radio" id="Soccer" name="questionNum3" value="Soccer"> 
+        <label for="Soccer">Soccer</label><br>
+        <input type="radio" id="Basketball" name="questionNum3" value="Basketball">
+        <label for="Basketball">Basketball</label><br>
+        <input type="radio" id="Tennis" name="questionNum3" value="Tennis"> 
+        <label for="Tennis">Tennis</label><br>
+      </div>
+      <div class="questions4">
+        <h1>Choose a hobby</h1>
+        <input type="radio" id="Gaming" name="questionNum4" value="Gaming">
+        <label for="Gaming">Gaming</label><br>
+        <input type="radio" id="Puzzles/Reading" name="questionNum4" value="Puzzles/Reading"> 
+        <label for="Puzzles/Reading">Puzzles/Reading</label><br>
+        <input type="radio" id="Gym" name="questionNum4" value="Gym"> 
+        <label for="Gym">Gym</label><br>
+        <input type="radio" id="Sleeping" name="questionNum4" value="Sleeping">
+        <label for="Sleeping">Sleeping</label><br>
+      </div>
+      <div class="questions5">
+        <h1>Favorite movie category</h1>
+        <input type="radio" id="multi5" name="questionNum5" value="Horror"> 
+        <label for="Horror">Horror</label><br>
+        <input type="radio" id="multi5" name="questionNum5" value="Action"> 
+        <label for="Action">Action</label><br>
+        <input type="radio" id="multi5" name="questionNum5" value="Romantic comedy">
+        <label for="Romantic comedy">Romantic comedy</label><br>
+        <input type="radio" id="multi5" name="questionNum5" value="Adventure"> 
+        <label for="Adventure">Adventure</label><br>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="Ruby"class="result">Ruby
+  </div>
+  <div id="Python"class="result">Python
+  </div>
+  <div id="Java"class="result">Java
+  </div>
 </body>
 </html>
