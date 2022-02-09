@@ -1,6 +1,9 @@
 $(document).ready(function() {
   $("form#pquiz").submit(function(event) {
     event.preventDefault();
+  $("#Ruby").hide();
+  $("#Python").hide();
+  $("#Java").hide();
     const questionNum1 = $('input[name="questionNum1"]:checked').val();
     const questionNum2 = $('input[name="questionNum2"]:checked').val();
     const questionNum3 = $('input[name="questionNum3"]:checked').val();
